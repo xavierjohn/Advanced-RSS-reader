@@ -27,9 +27,9 @@
      [[NSAttributedString alloc] initWithString:@"\n\n"]
      ];
     
-    int startIndex = [articleAbstract length];
+    NSUInteger startIndex = [articleAbstract length];
     
-    NSString* description = [NSString stringWithFormat:@"%@...", [self.description substringToIndex:100]];
+    NSString* description = [NSString stringWithFormat:@"%@...", [self.RssDescription substringToIndex:100]];
     description = [description gtm_stringByUnescapingFromHTML];
     
     [articleAbstract appendAttributedString:

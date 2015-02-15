@@ -45,7 +45,7 @@
                  //iterate over the articles
                  RSSItem* item = [[RSSItem alloc] init];
                  item.title = [[e child:@"title"] text];
-                 item.description = [[e child:@"description"] text];
+                 item.RssDescription = [[e child:@"description"] text];
                  item.link = [NSURL URLWithString: [[e child:@"link"] text]];
                  if (item.link != NULL) {
                      [result addObject: item];
